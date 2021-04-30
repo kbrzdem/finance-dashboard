@@ -261,7 +261,8 @@ main {
 }
 
 .button__two {
-  background: #6C4BE4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#585DF9), to(#673EE2));
+  background: linear-gradient(#585DF9, #673EE2);
   border-radius: 15px;
   color: white;
   font-size: 14px;

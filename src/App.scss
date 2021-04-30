@@ -98,7 +98,7 @@ main{
     padding: 20px 30px 50px 50px ;
     margin-top: 45px;
 }
-.session{
+.card{
     display:flex;
     justify-content: space-between;
 }
@@ -119,3 +119,24 @@ main{
         font-size: 12px;
     }
 }
+
+.subscriberscard{
+    padding:18px 35px;
+    background: #FDFCFE;
+    border-radius: 25px;
+     &__title{
+         font-size: 10px;
+         color:#1B1C20;
+         margin:0px;
+     }
+     &__title1{
+         color:#6C4BE4;
+         font-size: 24px;
+         font-weight:bold;
+         margin:0px;
+     }
+     &__title2{
+         color:#000000;
+         font-size: 12px;
+     }
+ }

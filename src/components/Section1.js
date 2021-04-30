@@ -1,6 +1,7 @@
 import Sessions from  "./Sessions";
 import Subscribers from  "./Subscribers";
-
+import Profıt from  "./Profıt";
+import Graphic from  "./Graphic";
 
 
 const Section1 = () => {
@@ -13,13 +14,13 @@ const Section1 = () => {
                 <Sessions />
             </div>
             <div>
-                <Sessions />
+                <Graphic/>
             </div>
             <div className="card">
                 <Subscribers />
             </div>
-            <div>
-                <Sessions />
+            <div className="profıt">
+                <Profıt />
             </div>
 
         </>

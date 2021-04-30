@@ -1,19 +1,11 @@
 body {
   background: #eceefd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .aside {
-  background: red;
+  float: left;
   margin: 100px 0px 100px 80px;
   max-width: 350px;
-  float: left;
 }
 
 .nav-wrap {
@@ -119,6 +111,10 @@ body {
   top: 36px;
 }
 
+.active {
+  font-size: 20px;
+}
+
 main {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E9FE));
   background: linear-gradient(#FFFFFF, #E8E9FE);
@@ -126,12 +122,15 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
+  left: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 30px 50px 50px;
   margin-top: 45px;
+  padding: 60px 30px 50px 180px;
+  position: absolute;
+  left: 200px;
+  z-index: -1;
 }
 
 .card {

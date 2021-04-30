@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from  "./components/Header";
+import Aside from  "./components/Aside";
 import Dashboard from  "./components/Dashboard";
 export const headerLinks = [
   {
@@ -43,9 +43,8 @@ export const headerLinks = [
 
 function App() {
   return (
-    
     <Router>
-      <Header headers={headerLinks}/>
+      <Aside headers={headerLinks}/>
       <main>
         <Switch>
             <Route>

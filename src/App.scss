@@ -88,7 +88,7 @@ body{
         
     }
 }
-.active{
+.active {
   font-size: 20px;
 }
 main{
@@ -144,5 +144,77 @@ main{
      &__title2{
          color:#000000;
          font-size: 12px;
+     }
+ }
+
+ .profıtcard{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: left;
+    padding: 16px;
+     
+    &__title{
+        
+         color: #2B2B2D;
+         
+
+     }
+     &__desc5--background{
+         align-items: center;
+         text-align: center;
+         background: #FDFCFE ;
+         border-radius: 20px;
+         color: #2B2B2D;
+         padding-bottom: 0;
+         padding-top: 0;
+         padding-left: 10px;
+            padding-right: 10px;
+         
+     }
+ }
+
+ .profile{
+     &__growth{
+        align-items: center;
+        display:flex;
+        justify-content: space-between;
+     }
+     &__overal h1{
+         color:#6C4BE4;
+         margin-bottom: 0px;
+     }
+     &__overal p{
+        color:#000000;
+        margin-top: 0px;
+    }
+ }
+
+ .button{
+     background: white;
+     border-radius: 26px;
+     color:#6C4BE4;
+     padding: 6px 8px 14px;
+     &__one{
+        font-size: 14px;
+        border-radius: 15px;
+        margin: 2px;
+        padding: 2px 20px 2px 6px;
+        &:hover{
+            cursor: pointer;
+        }
+       
+     }
+     &__two{
+        background: #6C4BE4;
+        border-radius: 15px;
+        color: white;
+        font-size: 14px;
+        margin: 2px;
+        padding: 2px 20px;
+        &:hover{
+            cursor: pointer;
+        }
+        
      }
  }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #eceefd;
 }
@@ -185,5 +186,90 @@ main {
 .subscriberscard__title2 {
   color: #000000;
   font-size: 12px;
+}
+
+.profıtcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 16px;
+}
+
+.profıtcard__title {
+  color: #2B2B2D;
+}
+
+.profıtcard__desc5--background {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #FDFCFE;
+  border-radius: 20px;
+  color: #2B2B2D;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile__growth {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__overal h1 {
+  color: #6C4BE4;
+  margin-bottom: 0px;
+}
+
+.profile__overal p {
+  color: #000000;
+  margin-top: 0px;
+}
+
+.button {
+  background: white;
+  border-radius: 26px;
+  color: #6C4BE4;
+  padding: 6px 8px 14px;
+}
+
+.button__one {
+  font-size: 14px;
+  border-radius: 15px;
+  margin: 2px;
+  padding: 2px 20px 2px 6px;
+}
+
+.button__one:hover {
+  cursor: pointer;
+}
+
+.button__two {
+  background: #6C4BE4;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  margin: 2px;
+  padding: 2px 20px;
+}
+
+.button__two:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

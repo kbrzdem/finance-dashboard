@@ -1,4 +1,5 @@
 import Sessions from  "./Sessions";
+import Subscribers from  "./Subscribers";
 
 
 
@@ -8,14 +9,14 @@ const Section1 = () => {
             <div>
                 <input type="text" name="" placeholder="Search" id="" />
             </div>
-            <div className="session">
+            <div className="card">
                 <Sessions />
             </div>
             <div>
                 <Sessions />
             </div>
-            <div>
-                <Sessions />
+            <div className="card">
+                <Subscribers />
             </div>
             <div>
                 <Sessions />

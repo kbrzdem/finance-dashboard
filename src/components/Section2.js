@@ -1,17 +1,10 @@
+import User from  "./user";
 
 
 const Section2 = () => {
     return (
         <>
-            <div>
-            <h1>rgrgrg</h1>
-            </div>
-            <div>
-            <h1>rgrgrg</h1>
-            </div>
-            <div>
-            <h1>rgrgrg</h1>
-            </div>
+            <User />
         </>
     )
 };

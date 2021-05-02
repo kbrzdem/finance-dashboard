@@ -1,7 +1,7 @@
 
 
 
-const Graphic = () => {
+const Chart = () => {
     return (
         <>
             <div className="profile">
@@ -15,7 +15,7 @@ const Graphic = () => {
                         <a className="button__two">Years</a>
                     </div>
                 </div>
-                <div className="profile__graphic">
+                <div className="profile__chart">
 
                 </div>
             </div>
@@ -24,4 +24,4 @@ const Graphic = () => {
     )
 };
 
-export default Graphic;
+export default Chart;

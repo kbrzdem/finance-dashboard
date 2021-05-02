@@ -1,7 +1,7 @@
 import Sessions from  "./Sessions";
 import Subscribers from  "./Subscribers";
 import Profıt from  "./Profıt";
-import Graphic from  "./Graphic";
+import Chart from  "./Chart";
 
 
 const Section1 = () => {
@@ -14,7 +14,7 @@ const Section1 = () => {
                 <Sessions />
             </div>
             <div>
-                <Graphic/>
+                <Chart/>
             </div>
             <div className="card">
                 <Subscribers />

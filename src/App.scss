@@ -208,7 +208,7 @@ main{
        
      }
      &__two{
-        background: linear-gradient(#585DF9,#673EE2);
+        background: linear-gradient(90deg,#585DF9,#673EE2);
         border-radius: 15px;
         color: white;
         font-size: 14px;
@@ -220,3 +220,63 @@ main{
         
      }
  }
+
+ .open{
+    padding:0px 40px;
+     width: 90%;
+ }
+ .usertitle{
+    
+        &__wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__img{
+            margin: 0px 20px 0 0 ;
+            margin-bottom: 20px;
+        }
+        &__namewrap{
+            display: flex;
+        }
+        &__name{
+            color: #4023aa;
+            margin: 10px 0px 0px 0px;
+        }
+        &__job{
+            color: #4023aa;
+            margin: 0px;
+        }
+ }
+.opentitle{
+    .subtitle{
+        align-items: center;
+        background: white;
+        border-radius: 26px;
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+        padding: 15px;
+     }
+     &__sub1{
+        color:#1B1C20;
+       }
+   &__sub1{
+    color:#6C4BE4;
+    font-size: 24px;
+    font-weight:bold;
+   }
+   &__pro{
+       display: flex;
+       flex-direction: column;
+   }
+   &__detail{
+    background:linear-gradient(90deg,#5f64fa,#673EE2);
+    border-radius: 12px;
+    padding:6px 15px 8px;
+    span{
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+}
+} 

@@ -261,8 +261,8 @@ main {
 }
 
 .button__two {
-  background: -webkit-gradient(linear, left top, left bottom, from(#585DF9), to(#673EE2));
-  background: linear-gradient(#585DF9, #673EE2);
+  background: -webkit-gradient(linear, left top, right top, from(#585DF9), to(#673EE2));
+  background: linear-gradient(90deg, #585DF9, #673EE2);
   border-radius: 15px;
   color: white;
   font-size: 14px;
@@ -272,5 +272,89 @@ main {
 
 .button__two:hover {
   cursor: pointer;
+}
+
+.open {
+  padding: 0px 40px;
+  width: 90%;
+}
+
+.usertitle__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.usertitle__img {
+  margin: 0px 20px 0 0;
+  margin-bottom: 20px;
+}
+
+.usertitle__namewrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.usertitle__name {
+  color: #4023aa;
+  margin: 10px 0px 0px 0px;
+}
+
+.usertitle__job {
+  color: #4023aa;
+  margin: 0px;
+}
+
+.opentitle .subtitle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-radius: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px;
+  padding: 15px;
+}
+
+.opentitle__sub1 {
+  color: #1B1C20;
+}
+
+.opentitle__sub1 {
+  color: #6C4BE4;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.opentitle__pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.opentitle__detail {
+  background: -webkit-gradient(linear, left top, right top, from(#5f64fa), to(#673EE2));
+  background: linear-gradient(90deg, #5f64fa, #673EE2);
+  border-radius: 12px;
+  padding: 6px 15px 8px;
+}
+
+.opentitle__detail span {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */

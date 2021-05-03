@@ -2,13 +2,13 @@ import Sessions from  "./Sessions";
 import Subscribers from  "./Subscribers";
 import Profıt from  "./Profıt";
 import Chart from  "./Chart";
-
+import Search from  "./Search";
 
 const Section1 = () => {
     return (
         <>
-            <div>
-                <input type="text" name="" placeholder="Search" id="" />
+            <div className="search">
+                <Search />
             </div>
             <div className="card">
                 <Sessions />

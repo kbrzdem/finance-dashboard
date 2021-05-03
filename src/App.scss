@@ -317,3 +317,56 @@ main{
 
     }
 }
+
+.date{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    &__day{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        text-align: center;
+        
+        &--background{
+            background:white;
+            border-radius: 20px; 
+            padding: 10px;
+            position: relative;
+            ::before{
+                content: "";
+                border-radius: 100px;
+                border: 1.4px #000000 solid ;
+                bottom: 0 ;
+                height: 1.8px;
+                position: absolute;
+                right: 10%;
+                transform: translateX(-50%);
+                top: 50%;
+                width: 1.8px;
+            }
+        }
+        &sub{
+            color:#6C4BE4;
+            &--color{
+                color: black;
+            }   
+        }
+        &--after{
+             
+            position: relative;
+            ::after{
+                content: "";
+                background: orange;
+                border-radius: 100px;                bottom: 0 ;
+                height: 4px;
+                left: 110%;
+                position: absolute;
+                transform: translateX(-50%);
+                top: 50%;
+                width: 4px;
+            }
+        }
+        
+    }
+}

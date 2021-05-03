@@ -405,4 +405,75 @@ main {
 .analytics__date-sub--padding {
   padding: 100px 8px 8px;
 }
+
+.date {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.date__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  text-align: center;
+}
+
+.date__day--background {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.date__day--background ::before {
+  content: "";
+  border-radius: 100px;
+  border: 1.4px #000000 solid;
+  bottom: 0;
+  height: 1.8px;
+  position: absolute;
+  right: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 50%;
+  width: 1.8px;
+}
+
+.date__daysub {
+  color: #6C4BE4;
+}
+
+.date__daysub--color {
+  color: black;
+}
+
+.date__day--after {
+  position: relative;
+}
+
+.date__day--after ::after {
+  content: "";
+  background: orange;
+  border-radius: 100px;
+  bottom: 0;
+  height: 4px;
+  left: 110%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 50%;
+  width: 4px;
+}
 /*# sourceMappingURL=App.css.map */

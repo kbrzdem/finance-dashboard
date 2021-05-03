@@ -128,7 +128,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 45px;
-  padding: 60px 30px 50px 180px;
+  margin-right: 40px;
+  padding: 40px 5px 50px 180px;
   position: absolute;
   left: 200px;
   z-index: -1;
@@ -276,7 +277,6 @@ main {
 
 .open {
   padding: 0px 40px;
-  width: 90%;
 }
 
 .usertitle__wrap {
@@ -321,8 +321,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 15px;
-  padding: 15px;
+  margin-bottom: 15px;
+  padding: 12px;
 }
 
 .opentitle__sub1 {
@@ -356,5 +356,53 @@ main {
   font-size: 18px;
   font-weight: bold;
   color: white;
+}
+
+.analytics__wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.analytics__title {
+  color: #6C4BE4;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.analytics__date {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.analytics__date-subtitle {
+  color: #4023aa;
+  margin: 0;
+  text-align: center;
+}
+
+.analytics__date-sub {
+  background: white;
+  border-radius: 12px;
+  min-width: 45px;
+  text-align: center;
+  padding: 40px 8px 8px;
+}
+
+.analytics__date-sub--padding {
+  padding: 100px 8px 8px;
 }
 /*# sourceMappingURL=App.css.map */

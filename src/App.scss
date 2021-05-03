@@ -101,7 +101,8 @@ main{
     left: 20px;
     justify-content: space-between;
     margin-top: 45px;
-    padding: 60px 30px 50px 180px ;
+    margin-right: 40px;
+    padding: 40px 5px 50px 180px ;
     position: absolute;
     left:200px;
     z-index: -1;
@@ -223,7 +224,6 @@ main{
 
  .open{
     padding:0px 40px;
-     width: 90%;
  }
  .usertitle{
     
@@ -254,8 +254,8 @@ main{
         border-radius: 26px;
         display: flex;
         justify-content: space-between;
-        margin: 15px;
-        padding: 15px;
+        margin-bottom: 15px;
+        padding: 12px;
      }
      &__sub1{
         color:#1B1C20;
@@ -280,3 +280,41 @@ main{
     }
 }
 } 
+
+
+.analytics{
+    &__wrap{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__title{
+        color:#6C4BE4;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__date{
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+        &-subtitle{
+            color: #4023aa;
+            margin:0;
+            text-align: center;
+        }
+        &-sub{
+           background:white;
+           border-radius: 12px;
+           min-width: 45px;
+           text-align: center;
+           
+           padding:40px 8px 8px;
+           &--padding{
+            padding:100px 8px 8px; 
+           } 
+        }
+        
+
+    }
+}

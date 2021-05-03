@@ -1,7 +1,7 @@
 import Open from "./Open";
 import Analytics from "./Analytics";
 import Audit from "./Audit";
-
+import Date from "./Date";
 const User = () => {
     return (
         <>
@@ -14,6 +14,9 @@ const User = () => {
                 </div>
                 <div  >
                     <Audit />
+                </div>
+                <div  >
+                    <Date />
                 </div>
             </div>
 

@@ -93,7 +93,7 @@ body{
   font-size: 20px;
 }
 main{
-    background: linear-gradient(#FFFFFF,#E8E9FE);
+    background: linear-gradient(#f3f3ff,#E8E9FE);
     
     border-radius: 45px;
     display: flex;
@@ -358,7 +358,8 @@ main{
             ::after{
                 content: "";
                 background: orange;
-                border-radius: 100px;                bottom: 0 ;
+                border-radius: 100px;                
+                bottom: 0 ;
                 height: 4px;
                 left: 110%;
                 position: absolute;
@@ -369,4 +370,30 @@ main{
         }
         
     }
+}
+
+.search{
+    
+    &__wrap{
+        
+        background:#fff;
+        border-radius: 28px;
+        max-width: 280px;
+        padding: 13px 15px;
+        position:relative;
+        
+    }
+    &__input{
+        border:none;
+        color: #4023aa;
+        font-size: 14px;
+        padding-left: 28px;
+
+    }
+    
+}
+
+.material-icons{
+    color: #4023aa;
+    position:absolute;
 }

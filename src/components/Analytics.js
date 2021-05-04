@@ -7,7 +7,9 @@ const Analytics = () => {
                         <p className="analytics__title">Analytics</p>
                     </div>
                     <div>
-                        <span>...</span>
+                    <span className="after after--color" ></span>
+                    <span className="after after--card after--color" ></span>
+                    <span className="after after--card2 after--color" ></span>
                     </div>
                 </div>
                 

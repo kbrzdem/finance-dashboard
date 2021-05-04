@@ -1,10 +1,10 @@
 
 import { NavLink } from "react-router-dom"
-const Aside = ({headers}) => {
+const Aside = ({ headers }) => {
 
     const resultHTML = [];
-    headers.forEach(({id,title,link}) => {
-        resultHTML.push(<NavLink exact to={link} key={id}>{title} </NavLink>)        
+    headers.forEach(({ id, title, link }) => {
+        resultHTML.push(<NavLink exact to={link} key={id}>{title} </NavLink>)
     });
 
     return (
@@ -18,13 +18,18 @@ const Aside = ({headers}) => {
                         </figure>
 
                         <nav className="nav-wrap__nav">
-                            {resultHTML} 
+                            {resultHTML}
                         </nav>
                         <div className="nav-wrap__card">
-                            
-                               <p>History available</p> 
-                               <span>Check your weekly transaction reports</span>
-                            
+                            <span class="material-icons material-icons--navcard ">
+                                restore
+                            </span>
+                            <h4>History available</h4>
+                            <span>Check your weekly transaction reports</span>
+                            <span className="after" ></span>
+                            <span className="after after--card" ></span>
+                            <span className="after after--card2" ></span>
+
                         </div>
                     </div>
                 </div>

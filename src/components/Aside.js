@@ -4,9 +4,10 @@ const Aside = ({ headers }) => {
 
     const resultHTML = [];
     headers.forEach(({ id, title, link,icon }) => {
-        resultHTML.push(<NavLink exact to={link} 
-        key={id}> <span className="material-icons material-icons--navbar">
-        {icon}</span>
+        resultHTML.push(<NavLink className="nav-wrap__navlink" exact to={link} 
+        key={id}> 
+        <div className="icon"><span className="material-icons material-icons--navbar">
+        {icon}</span></div> 
         {title} 
     </NavLink>)
     });

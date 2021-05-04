@@ -4,6 +4,7 @@
 const Profıt = () => {
     return (
         <>
+            <div class="col-6 col-md-6 col-lg-12">
             <div className="profıtcard">
                 <p className="profıtcard__title">Profıt list</p>
                 <p className="profıtcard__title" >David</p>
@@ -16,8 +17,9 @@ const Profıt = () => {
                 <span className="after after--card2 after--profıt after--profıt--two" ></span>
 
                 </div>
-
+                </div>
             </div>
+            <div class="col-6 col-md-6 col-lg-12">
             <div className="profıtcard">
                 <p className="profıtcard__title" >Growth Ratio</p>
                 <p className="profıtcard__title" >Mike</p>
@@ -30,8 +32,9 @@ const Profıt = () => {
                 <span className="after after--card2 after--profıt after--profıt--two" ></span>
 
                 </div>
-               
+                </div>   
             </div>
+            <div class="col-6 col-md-6 col-lg-12">
             <div className="profıtcard">
                 <p className="profıtcard__title">Earnigs</p>
                 <p className="profıtcard__title" >Ghulam</p>
@@ -42,7 +45,7 @@ const Profıt = () => {
                 <span className="after after--profıt" ></span>
                 <span className="after after--card after--profıt after--profıt--one" ></span>
                 <span className="after after--card2 after--profıt after--profıt--two" ></span>
-
+                </div>
                 </div>
             </div>
 

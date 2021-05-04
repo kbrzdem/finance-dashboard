@@ -5,7 +5,7 @@ const Subscribers = () => {
 
     return (
         <>
-            <div className="col-xs-6  col-md-3 col-lg-3">
+            <div className="col-6  col-md-3 col-lg-3">
             <div className="subscriberscard">
                 <span class="material-icons material-icons--subscribers">
                     touch_app
@@ -15,7 +15,7 @@ const Subscribers = () => {
                 <p className="subscriberscard__title2">+33.45%</p>
             </div>
             </div>
-            <div className="col-xs-6 col-md-3 col-lg-3">
+            <div className="col-6 col-md-3 col-lg-3">
             <div className="subscriberscard">
                 <span class="material-icons material-icons--subscribers">
                     schedule
@@ -25,7 +25,7 @@ const Subscribers = () => {
                 <p className="subscriberscard__title2">-112.45%</p>
             </div>
             </div>
-            <div className="col-xs-6 col-md-3 col-lg-3">
+            <div className="col-6 col-md-3 col-lg-3">
             <div className="subscriberscard">
                 <span class="material-icons material-icons--subscribers">
                     groups
@@ -35,7 +35,7 @@ const Subscribers = () => {
                 <p className="subscriberscard__title2">+62.10%</p>
             </div>
             </div>
-            <div className="col-xs-6 col-md-3 col-lg-3">
+            <div className="col-6 col-md-3 col-lg-3">
             <div className="subscriberscard">
                 <span class="material-icons material-icons--subscribers">
                     play_circle

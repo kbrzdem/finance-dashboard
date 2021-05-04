@@ -13,10 +13,10 @@ const User = () => {
                     <Analytics />
                 </div>
                 <div  >
-                    <Audit />
+                    <Date />
                 </div>
                 <div  >
-                    <Date />
+                    <Audit />
                 </div>
             </div>
 

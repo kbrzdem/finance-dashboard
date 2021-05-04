@@ -10,19 +10,24 @@ const Section1 = () => {
             <div className="search">
                 <Search />
             </div>
-            <div className="card">
-                <Sessions />
+            <div className="row">
+                <div className="card">
+                    <Sessions />
+                </div>
             </div>
-            <div>
-                <Chart/>
-            </div>
-            <div className="card">
+                <div className="row">
+                    <Chart/>
+                </div>
+            <div className="row">    
+                <div className="card">
                 <Subscribers />
+                </div>
             </div>
+            <div className="row"> 
             <div className="profıt">
                 <Profıt />
             </div>
-
+            </div>
         </>
     )
 };

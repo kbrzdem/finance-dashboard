@@ -6,6 +6,14 @@ body{
     //flex-direction: row;
     //justify-content: space-between;
 }
+:root{
+    --c-genel:#6C4BE4;
+    --c-white:white;
+    --c-black: black;
+    --f-bigsize: 24px;
+    --f-smsize:  20px;
+    --f-xssize: 12px;
+}
 .aside{
     float:left;
     margin: 100px 0px 100px 80px;
@@ -15,7 +23,7 @@ body{
 .nav-wrap{
     background:linear-gradient(#8D49F2,#595BFB) ;
     border-radius: 45px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
@@ -23,6 +31,7 @@ body{
     padding-right: 15px;
     padding-bottom: 20px;
     padding-top: 50px;
+    position: relative;
     &__img a{
         color: white;
         display: flex;
@@ -38,6 +47,8 @@ body{
             color: white;
             text-decoration: none;
             padding: 25px;
+            padding-left: 95px;
+            text-align: left;
         }
         & a:nth-child(1){
             padding-top: 50px;   
@@ -51,7 +62,7 @@ body{
        
         background: #E2D7FF;
         border-radius: 30px;
-        color: #6542E4;
+        color: var(--c-genel);
         padding-bottom: 30px;
         padding-left: 20px;
         padding-top: 50px;
@@ -59,7 +70,7 @@ body{
         text-align: left;
         
         & span{
-           max-width: 140px;
+            max-width: 140px;
             display: inline-flex;
         }
 }
@@ -85,6 +96,20 @@ body{
     &--color{
         background:#78797a;
     } 
+    &--profıt{
+        background: #78797a;
+        right: 44px;
+        &--one{
+            background: #78797a;
+            top: 30px;
+            right: 38px;
+        }
+        &--two{
+            background: #78797a;
+            top: 30px;
+            right: 32px;
+        }
+    }
 }
 .active {
   font-size: 20px;
@@ -103,81 +128,77 @@ main{
     left:200px;
     z-index: -1;
 }
-.card{
-    display:flex;
-    justify-content: space-between;
-    padding:25px 0;
-}
+/*.card{}*/
 .sessionscard{
    
    position: relative;
     &__title{
-        color:#1B1C20;
+        color:var(--c-black);
         margin:0px;
     }
     &__title1{
-        color:#6C4BE4;
+        color: var(--c-genel);;
         font-size: 24px;
         font-weight:bold;
         margin:0px;
     }
     &__title2{
-        color:#000000;
-        font-size: 12px;
+        color:var(--c-black);
+        font-size:var(--f-xssize);
     }
 }
 
 .subscriberscard{
     align-items: center;
-    margin: 7px;
-    background: #FDFCFE;
+    background: var(--c-white);
     border-radius: 25px;
-    padding:8px 18px 8px 45px;
+    padding:5px 10px 5px 46px;
+    margin: 5px;
     position: relative;
     text-align: left;
      &__title{
-         font-size: 11px;
-         color:#1B1C20;
-         margin:0px;
+         font-size: var(--f-xssize);
+         color:var(--c-black);
+         margin: 0;
          white-space: nowrap;
+         
      }
      &__title1{
-         color:#6C4BE4;
-         font-size: 24px;
+         color:var(--c-genel);
+         font-size: var(--f-smsize);
          font-weight:bold;
-         margin:0px;
+         margin-bottom: 9px;
+         margin-top: 9px;
+
      }
      &__title2{
-         color:#000000;
-         font-size: 12px;
+        color:var(--c-black);
+        font-size:var(--f-xssize);
+         margin: 0;
      }
  }
 
  .profıtcard{
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    align-items: left;
+    flex-direction: column;
+    font-size: var(--f-xssize);
     padding: 16px;
-     
+    position: relative;
+    width: 150%;
     &__title{
         
-         color: #2B2B2D;
+         color: var(--c-black);
          
-
      }
      &__desc5--background{
          align-items: center;
-         text-align: center;
-         background: #FDFCFE ;
+         background: var(--c-white) ;
          border-radius: 20px;
-         color: #2B2B2D;
-         padding-bottom: 0;
-         padding-top: 0;
-         padding-left: 10px;
-            padding-right: 10px;
-         
-     }
+         color: (var(--c-black));
+         padding: 2px ;
+         height: 17px;
+         width: 14%;
+         text-align: center;
+     } 
  }
 
  .profile{
@@ -186,29 +207,29 @@ main{
         display:flex;
         justify-content: space-between;
      }
-     &__overal h1{
-         color:#6C4BE4;
+     &__overal h3{
+        color: var(--c-genel);
          margin-bottom: 0px;
      }
      &__overal p{
-        color:#000000;
+        color:var(--c-black);
+        font-size:var(--f-xssize);
         margin-top: 0px;
     }
  }
 
  .button{
-     background: white;
+     background: var(--c-white);
      border-radius: 26px;
-     
-     padding: 6px 8px 14px;
+     padding: 6px 6px 10px 6px;
     
      &__one{
  
         border-radius: 15px;
-        color:#6C4BE4;
-        font-size: 14px;
+        color: var(--c-genel);
+        font-size: var(--f-xssize);
         margin: 2px;
-        padding: 2px 20px 2px 6px;
+        padding: 2px 4px 2px 6px;
         text-decoration: none;
         &:hover{
             cursor: pointer;
@@ -218,10 +239,10 @@ main{
      &__two{
         background: linear-gradient(90deg,#585DF9,#673EE2);
         border-radius: 15px;
-        color: white;
-        font-size: 14px;
-        margin: 2px;
-        padding: 2px 20px;
+        color: var(--c-white);
+        font-size: var(--f-xssize);
+         margin: 2px;
+        padding: 2px 14px;
         text-decoration: none;
         &:hover{
             cursor: pointer;
@@ -231,10 +252,13 @@ main{
  }
 
  .open{
-    padding:0px 40px;
+    padding:0px 10px;
+    font-size: var(--f-xssize);
+
  }
  .usertitle{
     position: relative;
+    font-size: 16px;
 
         &__wrap{
             display: flex;
@@ -248,7 +272,7 @@ main{
             display: flex;
         }
         &__name{
-            color: #4023aa;
+            color: #3415a3;
             margin: 10px 0px 0px 0px;
             text-align: left;
         }
@@ -283,9 +307,10 @@ main{
     
     .subtitle{
         align-items: center;
-        background: white;
-        border-radius: 26px;
+        background: var(--c-white);
+        border-radius: 18px;
         display: flex;
+        height: 70px;
         justify-content: space-between;
         margin-bottom: 15px;
         padding: 12px;
@@ -293,8 +318,8 @@ main{
         white-space: nowrap;
      }
    &__sub1{
-    color:#6C4BE4;
-    font-size: 24px;
+    color:var(--c-genel);
+    font-size: var(--f-smsize);
     font-weight:bold;
    }
    &__pro{
@@ -319,7 +344,7 @@ main{
     
     &__title{
 
-        color:#6C4BE4;
+        color:var(--c-genel);
         font-size: 18px;
         font-weight: bold;
         margin-top: 21px;
@@ -336,7 +361,7 @@ main{
         &-sub{
            background:white;
            border-radius: 12px;
-           min-width: 60px;
+           min-width: 54px;
            text-align: center;
            padding:40px 8px 8px;
            &--padding{
@@ -355,11 +380,11 @@ main{
     &__day{
         display: flex;
         flex-direction: column;
-        font-size: 14px;
+        font-size: var(--f-xssize);
         text-align: center;
         
         &--background{
-            background:white;
+            background:var(--c-white);
             border-radius: 20px; 
             padding: 10px;
             position: relative;
@@ -377,7 +402,7 @@ main{
             }
         }
         &sub{
-            color:#6C4BE4;
+            color:var(--c-genel);
             &--color{
                 color: black;
             }   
@@ -394,7 +419,7 @@ main{
                 left: 110%;
                 position: absolute;
                 transform: translateX(-50%);
-                top: 50%;
+                top: 12px;
                 width: 4px;
             }
         }
@@ -426,6 +451,10 @@ main{
 .material-icons{
     color: #331797c0;
     position:absolute;
+    .card{
+        display: flex;
+        justify-content: space-between;
+    }
     &--sessions{
         color: #6C4BE4;
         position:absolute;
@@ -447,9 +476,47 @@ main{
         right: 12px;
 
     }
+    &--navbar{
+        color: rgb(242, 239, 243);
+        left: 35px;
+    }
     &--navcard{
         font-size: 40px;
         top: 20px;
     }
+   
 }
 
+
+
+@media screen and(min-width:992px){
+    .card{
+        display:flex;
+        justify-content: space-between;
+        padding:25px 0;
+        width: 100%;
+    }
+    .subscriberscard{
+        margin: 7px;
+        padding:10px 30px 10px 46px;
+        margin: 3px;
+        width: 115%;
+    }
+    .profıt {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width:66%;
+    }
+    .profıtcard{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        &__desc5--background{
+        max-width: 20%;
+        }
+    }
+    .profile{
+        width:100%;
+    }
+}

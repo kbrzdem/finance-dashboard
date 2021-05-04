@@ -5,7 +5,7 @@ const Aside = ({ headers }) => {
     const resultHTML = [];
     headers.forEach(({ id, title, link,icon }) => {
         resultHTML.push(<NavLink exact to={link} 
-        key={id}> <span class="material-icons">
+        key={id}> <span className="material-icons material-icons--navbar">
         {icon}</span>
         {title} 
     </NavLink>)
@@ -20,10 +20,12 @@ const Aside = ({ headers }) => {
                             <NavLink to=" "><img src="https://i.resmim.net/i/logo.png.png" alt="logo" />Virtual Dashboard</NavLink>
 
                         </figure>
-
+                        <div className="row">
                         <nav className="nav-wrap__nav">
                             {resultHTML}
                         </nav>
+                        </div>
+                        
                         <div className="nav-wrap__card">
                             <span class="material-icons material-icons--navcard ">
                                 restore

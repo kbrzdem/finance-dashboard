@@ -3,8 +3,12 @@ import { NavLink } from "react-router-dom"
 const Aside = ({ headers }) => {
 
     const resultHTML = [];
-    headers.forEach(({ id, title, link }) => {
-        resultHTML.push(<NavLink exact to={link} key={id}>{title} </NavLink>)
+    headers.forEach(({ id, title, link,icon }) => {
+        resultHTML.push(<NavLink exact to={link} 
+        key={id}> <span class="material-icons">
+        {icon}</span>
+        {title} 
+    </NavLink>)
     });
 
     return (

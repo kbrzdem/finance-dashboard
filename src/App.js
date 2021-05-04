@@ -7,36 +7,43 @@ export const headerLinks = [
     "id": 1,
     "title": "Dashboard",
     "link": "/",
+    "icon":"line_style"
   },
   {
     "id": 2,
     "title": "Profile",
-    "link": "/profile"
+    "link": "/profile",
+    "icon":"person"
   },
   {
     "id": 3,
     "title": "Utilities",
-    "link": "/utilities"
+    "link": "/utilities",
+    "icon":"business_center"
   },
   {
     "id": 4,
     "title": "Settings",
-    "link": "/settings"
+    "link": "/settings",
+    "icon":"settings"
   },
   {
     "id": 4,
     "title": "Messages",
-    "link": "/messages"
+    "link": "/messages",
+    "icon":"mail"
   },
   {
     "id": 4,
     "title": "Analytics",
-    "link": "/analytics"
+    "link": "/analytics",
+    "icon":"pie_chart"
   },
   {
     "id": 4,
     "title": "Integrations",
-    "link": "/ıntegrations"
+    "link": "/ıntegrations",
+    "icon":"integration_instructions"
   }
 ]
 

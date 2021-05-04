@@ -14,17 +14,16 @@ const Aside = ({ headers }) => {
     return (
         <>
             <aside className="aside">
-                <div className="container">
                     <div className="nav-wrap">
                         <figure className="nav-wrap__img">
                             <NavLink to=" "><img src="https://i.resmim.net/i/logo.png.png" alt="logo" />Virtual Dashboard</NavLink>
 
                         </figure>
-                        <div className="row">
+                        
                         <nav className="nav-wrap__nav">
                             {resultHTML}
                         </nav>
-                        </div>
+                        
                         
                         <div className="nav-wrap__card">
                             <span class="material-icons material-icons--navcard ">
@@ -38,7 +37,6 @@ const Aside = ({ headers }) => {
 
                         </div>
                     </div>
-                </div>
             </aside>
         </>
     )

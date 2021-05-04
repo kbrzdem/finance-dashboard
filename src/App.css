@@ -14,8 +14,8 @@ body {
 
 .aside {
   float: left;
-  margin: 100px 0px 100px 80px;
-  max-width: 350px;
+  margin: 100px 0px 100px 70px;
+  display: none;
 }
 
 .nav-wrap {
@@ -33,7 +33,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: left;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 15px;
   padding-bottom: 20px;
   padding-top: 50px;
@@ -147,22 +147,14 @@ main {
   background: -webkit-gradient(linear, left top, left bottom, from(#f3f3ff), to(#E8E9FE));
   background: linear-gradient(#f3f3ff, #E8E9FE);
   border-radius: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  left: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 45px;
-  margin-right: 40px;
-  padding: 40px 5px 50px 180px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 40px 5px 50px 40px;
   position: absolute;
-  left: 200px;
   z-index: -1;
 }
 
-/*.card{}*/
 .sessionscard {
   position: relative;
 }
@@ -580,7 +572,7 @@ main {
 
 .material-icons--navbar {
   color: #f2eff3;
-  left: 35px;
+  left: 40px;
 }
 
 .material-icons--navcard {
@@ -589,6 +581,28 @@ main {
 }
 
 @media screen and (min-width: 992px) {
+  main {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3ff), to(#E8E9FE));
+    background: linear-gradient(#f3f3ff, #E8E9FE);
+    border-radius: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 45px;
+    margin-right: 40px;
+    padding: 40px 5px 50px 180px;
+    position: absolute;
+    left: 160px;
+    z-index: -1;
+  }
+  .aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .card {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -142,10 +142,11 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 25px 0;
 }
 
 .sessionscard {
-  padding: 30px 35px;
+  position: relative;
 }
 
 .sessionscard__title {
@@ -166,15 +167,22 @@ main {
 }
 
 .subscriberscard {
-  padding: 18px 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 7px;
   background: #FDFCFE;
   border-radius: 25px;
+  padding: 8px 18px 8px 45px;
+  position: relative;
+  text-align: left;
 }
 
 .subscriberscard__title {
   font-size: 11px;
   color: #1B1C20;
   margin: 0px;
+  white-space: nowrap;
 }
 
 .subscriberscard__title1 {
@@ -246,15 +254,16 @@ main {
 .button {
   background: white;
   border-radius: 26px;
-  color: #6C4BE4;
   padding: 6px 8px 14px;
 }
 
 .button__one {
-  font-size: 14px;
   border-radius: 15px;
+  color: #6C4BE4;
+  font-size: 14px;
   margin: 2px;
   padding: 2px 20px 2px 6px;
+  text-decoration: none;
 }
 
 .button__one:hover {
@@ -269,6 +278,7 @@ main {
   font-size: 14px;
   margin: 2px;
   padding: 2px 20px;
+  text-decoration: none;
 }
 
 .button__two:hover {
@@ -277,6 +287,10 @@ main {
 
 .open {
   padding: 0px 40px;
+}
+
+.usertitle {
+  position: relative;
 }
 
 .usertitle__wrap {
@@ -289,7 +303,7 @@ main {
 }
 
 .usertitle__img {
-  margin: 0px 20px 0 0;
+  margin: 0px 10px 0 0;
   margin-bottom: 20px;
 }
 
@@ -302,11 +316,32 @@ main {
 .usertitle__name {
   color: #4023aa;
   margin: 10px 0px 0px 0px;
+  text-align: left;
 }
 
 .usertitle__job {
   color: #4023aa;
   margin: 0px;
+}
+
+.usertitle__handle::after {
+  content: "";
+  background: #546AB6;
+  border-radius: 100px;
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  right: 0px;
+  top: 18px;
+  width: 15px;
+}
+
+.usertitle__handle--two {
+  height: 2px;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  width: 10px;
 }
 
 .opentitle .subtitle {
@@ -323,10 +358,8 @@ main {
           justify-content: space-between;
   margin-bottom: 15px;
   padding: 12px;
-}
-
-.opentitle__sub1 {
-  color: #1B1C20;
+  position: relative;
+  white-space: nowrap;
 }
 
 .opentitle__sub1 {
@@ -348,14 +381,8 @@ main {
 .opentitle__detail {
   background: -webkit-gradient(linear, left top, right top, from(#5f64fa), to(#673EE2));
   background: linear-gradient(90deg, #5f64fa, #673EE2);
-  border-radius: 12px;
-  padding: 6px 15px 8px;
-}
-
-.opentitle__detail span {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
+  border-radius: 8px;
+  padding: 13px;
 }
 
 .analytics__wrap {
@@ -397,7 +424,7 @@ main {
 .analytics__date-sub {
   background: white;
   border-radius: 12px;
-  min-width: 45px;
+  min-width: 60px;
   text-align: center;
   padding: 40px 8px 8px;
 }
@@ -493,7 +520,30 @@ main {
 }
 
 .material-icons {
-  color: #4023aa;
+  color: #331797c0;
   position: absolute;
+}
+
+.material-icons--sessions {
+  color: #6C4BE4;
+  position: absolute;
+  left: -35px;
+}
+
+.material-icons--subscribers {
+  background: -webkit-gradient(linear, left top, right top, from(#585DF9), to(#673EE2));
+  background: linear-gradient(90deg, #585DF9, #673EE2);
+  bottom: 30px;
+  border-radius: 5px;
+  color: #f2eff3;
+  font-size: 20px;
+  left: 3px;
+  padding: 6px;
+}
+
+.material-icons--open {
+  color: #f2eff3;
+  bottom: 25px;
+  right: 12px;
 }
 /*# sourceMappingURL=App.css.map */

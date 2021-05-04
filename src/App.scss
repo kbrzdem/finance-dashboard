@@ -94,7 +94,6 @@ body{
 }
 main{
     background: linear-gradient(#f3f3ff,#E8E9FE);
-    
     border-radius: 45px;
     display: flex;
    // float:left;
@@ -110,9 +109,11 @@ main{
 .card{
     display:flex;
     justify-content: space-between;
+    padding:25px 0;
 }
 .sessionscard{
-   padding:30px 35px;
+   
+   position: relative;
     &__title{
         color:#1B1C20;
         margin:0px;
@@ -130,13 +131,18 @@ main{
 }
 
 .subscriberscard{
-    padding:18px 35px;
+    align-items: center;
+    margin: 7px;
     background: #FDFCFE;
     border-radius: 25px;
+    padding:8px 18px 8px 45px;
+    position: relative;
+    text-align: left;
      &__title{
          font-size: 11px;
          color:#1B1C20;
          margin:0px;
+         white-space: nowrap;
      }
      &__title1{
          color:#6C4BE4;
@@ -196,13 +202,17 @@ main{
  .button{
      background: white;
      border-radius: 26px;
-     color:#6C4BE4;
+     
      padding: 6px 8px 14px;
+    
      &__one{
-        font-size: 14px;
+ 
         border-radius: 15px;
+        color:#6C4BE4;
+        font-size: 14px;
         margin: 2px;
         padding: 2px 20px 2px 6px;
+        text-decoration: none;
         &:hover{
             cursor: pointer;
         }
@@ -215,6 +225,7 @@ main{
         font-size: 14px;
         margin: 2px;
         padding: 2px 20px;
+        text-decoration: none;
         &:hover{
             cursor: pointer;
         }
@@ -226,13 +237,14 @@ main{
     padding:0px 40px;
  }
  .usertitle{
-    
+    position: relative;
+
         &__wrap{
             display: flex;
             justify-content: space-between;
         }
         &__img{
-            margin: 0px 20px 0 0 ;
+            margin: 0px 10px 0 0 ;
             margin-bottom: 20px;
         }
         &__namewrap{
@@ -241,13 +253,37 @@ main{
         &__name{
             color: #4023aa;
             margin: 10px 0px 0px 0px;
+            text-align: left;
         }
         &__job{
             color: #4023aa;
             margin: 0px;
         }
+        &__handle{
+            &::after{
+                content:"";
+                background:#546AB6;
+                    border-radius: 100px;
+                    bottom: 0;
+                    height: 2px;
+                    position: absolute;
+                    right: 0px;
+                    top: 18px;
+                    width: 15px;
+            }
+            
+            &--two{
+                height: 2px;
+                position: absolute;
+                right: 0px;
+                top: 6px;
+                width: 10px;       
+            }
+
+        }
  }
 .opentitle{
+    
     .subtitle{
         align-items: center;
         background: white;
@@ -256,10 +292,9 @@ main{
         justify-content: space-between;
         margin-bottom: 15px;
         padding: 12px;
+        position: relative;
+        white-space: nowrap;
      }
-     &__sub1{
-        color:#1B1C20;
-       }
    &__sub1{
     color:#6C4BE4;
     font-size: 24px;
@@ -271,13 +306,8 @@ main{
    }
    &__detail{
     background:linear-gradient(90deg,#5f64fa,#673EE2);
-    border-radius: 12px;
-    padding:6px 15px 8px;
-    span{
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-    }
+    border-radius: 8px;
+    padding:13px;
 }
 } 
 
@@ -306,7 +336,7 @@ main{
         &-sub{
            background:white;
            border-radius: 12px;
-           min-width: 45px;
+           min-width: 60px;
            text-align: center;
            padding:40px 8px 8px;
            &--padding{
@@ -394,6 +424,28 @@ main{
 }
 
 .material-icons{
-    color: #4023aa;
+    color: #331797c0;
     position:absolute;
+    &--sessions{
+        color: #6C4BE4;
+        position:absolute;
+        left: -35px;
+    }
+    &--subscribers{
+        background: linear-gradient(90deg,#585DF9,#673EE2);
+        bottom: 30px;
+        border-radius: 5px ;
+        color: rgb(242, 239, 243);
+        font-size: 20px;
+        left: 3px;
+        padding:6px;
+    }
+
+    &--open{
+        color: rgb(242, 239, 243);
+        bottom: 25px;
+        right: 12px;
+
+    }
 }
+

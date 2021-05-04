@@ -11,8 +11,8 @@ const Chart = () => {
                         <p>Overal Information</p>
                     </div>
                     <div className="button">
-                        <a className="button__one">Monts</a>
-                        <a className="button__two">Years</a>
+                        <a href="/#" className="button__one">Monts</a>
+                        <a href="/#" className="button__two">Years</a>
                     </div>
                 </div>
                 <div className="profile__chart">

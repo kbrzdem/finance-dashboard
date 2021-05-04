@@ -10,16 +10,17 @@ const Open = () => {
                             <img src="https://i.resmim.net/i/user.png" alt="" />
                         </figure>
                         <div>
-                            <h1 className="usertitle__name" >
+                            <h3 className="usertitle__name" >
                                 Mike Lock
-                            </h1>
+                            </h3>
                             <p className="usertitle__job">
                                 UI Designer
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <span> ...</span>
+                    <div >
+                        <span className="usertitle__handle"> </span>
+                        <span className="usertitle__handle usertitle__handle--two"> </span>
                     </div>
                 </div>
             </div>
@@ -31,7 +32,9 @@ const Open = () => {
                     </div>
 
                     <div className="opentitle__detail">
-                        <span> > </span>
+                        <span class="material-icons material-icons--open ">
+                            chevron_right
+</span>
                     </div>
                 </div>
                 <div className="subtitle">
@@ -41,21 +44,25 @@ const Open = () => {
                     </div>
 
                     <div className="opentitle__detail">
-                        <span> > </span>
+                        <span class="material-icons material-icons--open">
+                            chevron_right
+</span>
                     </div>
 
                 </div>
-                <div>
+               
                     <div className="subtitle">
                         <div className="opentitle__pro">
                             <span className="opentitle__sub">Earned This Month</span>
                             <span className="opentitle__sub1">$523001</span>
                         </div>
+
+                        <div className="opentitle__detail">
+                            <span class="material-icons material-icons--open">
+                                chevron_right
+</span>
+                        </div>
                     
-                    <div className="opentitle__detail">
-                        <span> > </span>
-                    </div>
-                    </div>
                 </div>
             </div>
 

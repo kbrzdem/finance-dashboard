@@ -146,7 +146,7 @@ main{
     z-index: -1;
 }
 .card{
-   // display: flex;
+   padding: 10px 0;
 
 }
 .sessionscard{
@@ -537,13 +537,87 @@ main{
         z-index: -1;
     }
     .aside{
+    float:left;
+    margin: 100px 0px 100px 70px;
+    display: none;
+    
+}
+.nav-wrap{
+    background:linear-gradient(#8D49F2,#595BFB) ;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    position: relative;
+    &__img img{
+        width: 60%;
+        align-items: center;
+        margin: auto;
+    }
+    &__img a{
+        color: white;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    &__nav{
+        display: inline-flex;
+        flex-direction: column;
+        
+        &link{
+            align-items: center;
+            color: var(--c-white);
+            text-decoration: none;
+            margin: 20px;
+            padding-left: 70px;
+            text-align: left;
+            &.active{
+                color: #3415a3;
+                font-weight: bold;
+            }
+        }
+        
+        
+        & a:nth-child(1){
+            padding-top: 50px;   
+        }
+        & a:nth-child(7){
+            padding-bottom: 200px;   
+        }
+    }
+
+    &__card{
+       
+        background: #E2D7FF;
+        border-radius: 30px;
+        color: var(--c-genel);
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-top: 50px;
+        position: relative;
+        text-align: left;
+        
+        & span{
+            max-width: 140px;
+            display: inline-flex;
+        }
+}
+}
+    .aside{
         display: flex;
     }
     .card{
         display:flex;
         justify-content: space-between;
         padding:25px 0;
-        width: 100%;
     }
     .subscriberscard{
         padding:10px 30px 10px 46px;

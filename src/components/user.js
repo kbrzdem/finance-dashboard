@@ -3,30 +3,26 @@ import Analytics from "./Analytics";
 import Date from "./Date";
 import Audit from "./Audit";
 import Reviews from "./Reviews";
+import Privilege from "./Privilege";
 
 const User = () => {
-    return (
-        <>
-            <div className="open">
-                <div >
-                    <Open />
-                </div>
-                <div  >
-                    <Analytics />
-                </div>
-                <div  >
-                    <Date />
-                </div>
-                <div  >
-                    <Audit />
-                </div>
-                <div  >
-                    <Reviews />
-                </div>
-            </div>
+  return (
+    <>
+      <div className="open">
+        <Open />
 
-        </>
-    )
+        <Analytics />
+
+        <Date />
+
+        <Audit />
+        
+        <Reviews />
+
+        <Privilege />
+      </div>
+    </>
+  );
 };
 
 export default User;

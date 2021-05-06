@@ -601,6 +601,35 @@ main {
   padding-left: 28px;
 }
 
+.audit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 21px;
+}
+
+.audit__title {
+  margin: 0;
+  text-align: center;
+}
+
+.audit__text {
+  background: var(--c-white);
+  border-radius: 10px;
+  font-size: var(--f-xssize);
+  padding: 5px 0px 5px 10px;
+  position: relative;
+  text-align: left;
+  width: 41%;
+  word-spacing: -2px;
+}
+
 .material-icons {
   color: #331797c0;
   position: absolute;
@@ -650,6 +679,16 @@ main {
 .material-icons--navcard {
   font-size: 40px;
   top: 20px;
+}
+
+.material-icons--audit {
+  color: var(--c-white);
+  background: #ccbda1;
+  border-radius: 3px;
+  font-size: 12px;
+  left: 90px;
+  padding: 1px;
+  top: 8px;
 }
 
 @media screen and (min-width: 992px) {
@@ -775,7 +814,8 @@ main {
 }
 
 .percent {
-  margin-top: 110px;
+  margin-top: 10px;
+  margin-left: 40px;
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -823,7 +863,7 @@ main {
   width: 200px;
   height: 200px;
   bottom: 115px;
-  left: 5px;
+  left: 42px;
 }
 
 .svgcircle .percentcircle {

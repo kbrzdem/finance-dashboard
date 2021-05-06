@@ -203,7 +203,8 @@ main {
   color: var(--c-genel);
   font-size: 24px;
   font-weight: bold;
-  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 6px;
 }
 
 .sessionscard__title2 {
@@ -226,7 +227,8 @@ main {
 .subscriberscard__title {
   font-size: var(--f-xssize);
   color: var(--c-black);
-  margin: 0;
+  margin-bottom: 2px;
+  margin-top: 5px;
   white-space: nowrap;
 }
 
@@ -234,14 +236,15 @@ main {
   color: var(--c-genel);
   font-size: var(--f-smsize);
   font-weight: bold;
-  margin-bottom: 9px;
-  margin-top: 9px;
+  margin-bottom: 6px;
+  margin-top: 6px;
 }
 
 .subscriberscard__title2 {
   color: var(--c-black);
   font-size: var(--f-xssize);
   margin: 0;
+  margin-bottom: 4px;
 }
 
 .profıtcard {
@@ -285,7 +288,7 @@ main {
 
 .profile__overal h3 {
   color: var(--c-genel);
-  margin-bottom: 0px;
+  margin-bottom: 6px;
 }
 
 .profile__overal p {
@@ -338,7 +341,7 @@ main {
 }
 
 .open {
-  padding: 0px 10px;
+  padding: 0px 20px;
   font-size: var(--f-xssize);
 }
 
@@ -390,7 +393,7 @@ main {
   height: 2px;
   position: absolute;
   right: 0px;
-  top: 18px;
+  top: 16px;
   width: 15px;
 }
 
@@ -399,7 +402,6 @@ main {
   position: absolute;
   right: 0px;
   top: 6px;
-  width: 10px;
 }
 
 .usertitle__handle--two:hover {
@@ -433,7 +435,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 15px;
-  padding: 12px;
+  padding: 22px;
   position: relative;
   white-space: nowrap;
 }
@@ -442,6 +444,7 @@ main {
   color: var(--c-genel);
   font-size: var(--f-smsize);
   font-weight: bold;
+  margin-top: 6px;
 }
 
 .opentitle__pro {
@@ -488,9 +491,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .analytics__date-subtitle {
@@ -518,9 +521,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .date__day {
@@ -546,18 +548,18 @@ main {
   content: "";
   border-radius: 100px;
   border: 1.4px #000000 solid;
-  bottom: 0;
-  height: 1.8px;
+  height: 4px;
   position: absolute;
-  right: 10%;
+  right: 5px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 50%;
-  width: 1.8px;
+  top: 30px;
+  width: 4px;
 }
 
 .date__daysub {
   color: var(--c-genel);
+  margin-top: 10px;
 }
 
 .date__daysub--color {
@@ -574,11 +576,11 @@ main {
   border-radius: 100px;
   bottom: 0;
   height: 4px;
-  left: 110%;
+  left: 16px;
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 12px;
+  top: 18px;
   width: 4px;
 }
 
@@ -711,8 +713,8 @@ main {
 
 .material-icons--open {
   color: #f2eff3;
-  bottom: 25px;
-  right: 12px;
+  bottom: 24px;
+  right: 23px;
 }
 
 .material-icons--navbar {
@@ -777,7 +779,7 @@ main {
   }
   .subscriberscard {
     padding: 10px 30px 10px 46px;
-    width: 115%;
+    width: 106%;
   }
   .profıt {
     display: -webkit-box;

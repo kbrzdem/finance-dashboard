@@ -4,11 +4,11 @@ body {
 }
 
 :root {
-  --c-genel:#6C4BE4;
-  --c-white:white;
+  --c-genel: #6c4be4;
+  --c-white: white;
   --c-black: black;
   --f-bigsize: 24px;
-  --f-smsize:  20px;
+  --f-smsize: 20px;
   --f-xssize: 12px;
 }
 
@@ -19,8 +19,8 @@ body {
 }
 
 .nav-wrap {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8D49F2), to(#595BFB));
-  background: linear-gradient(#8D49F2, #595BFB);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8d49f2), to(#595bfb));
+  background: linear-gradient(#8d49f2, #595bfb);
   border-radius: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +84,6 @@ body {
 }
 
 .nav-wrap__navlink.active {
-  color: #3415a3;
   font-weight: bold;
 }
 
@@ -97,7 +96,7 @@ body {
 }
 
 .nav-wrap__card {
-  background: #E2D7FF;
+  background: #e2d7ff;
   border-radius: 30px;
   color: var(--c-genel);
   padding-bottom: 30px;
@@ -116,7 +115,7 @@ body {
 
 .after {
   content: "";
-  background: #546AB6;
+  background: #546ab6;
   border-radius: 100px;
   bottom: 0;
   position: absolute;
@@ -152,30 +151,30 @@ body {
   cursor: pointer;
 }
 
-.after--profıt {
+.after--profıtcard {
   background: #78797a;
-  right: 105px;
+  left: 155px;
 }
 
-.after--profıt:hover {
+.after--profıtcard:hover {
   cursor: pointer;
 }
 
-.after--profıt--one {
+.after--profıtcard--one {
   background: #78797a;
   top: 30px;
-  right: 98px;
+  left: 162px;
 }
 
-.after--profıt--two {
+.after--profıtcard--two {
   background: #78797a;
   top: 30px;
-  right: 92px;
+  left: 168px;
 }
 
 main {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3ff), to(#E8E9FE));
-  background: linear-gradient(#f3f3ff, #E8E9FE);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3ff), to(#e8e9fe));
+  background: linear-gradient(#f3f3ff, #e8e9fe);
   border-radius: 45px;
   margin-top: 45px;
   margin-left: 20px;
@@ -253,7 +252,6 @@ main {
   font-size: var(--f-xssize);
   padding: 16px;
   position: relative;
-  width: 150%;
 }
 
 .profıtcard__title {
@@ -296,6 +294,15 @@ main {
   margin-top: 0px;
 }
 
+.profile__chart {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.profile__chart svg {
+  width: 400px;
+}
+
 .button {
   background: var(--c-white);
   border-radius: 26px;
@@ -316,8 +323,8 @@ main {
 }
 
 .button__two {
-  background: -webkit-gradient(linear, left top, right top, from(#585DF9), to(#673EE2));
-  background: linear-gradient(90deg, #585DF9, #673EE2);
+  background: -webkit-gradient(linear, left top, right top, from(#585df9), to(#673ee2));
+  background: linear-gradient(90deg, #585df9, #673ee2);
   border-radius: 15px;
   color: var(--c-white);
   font-size: var(--f-xssize);
@@ -377,7 +384,7 @@ main {
 
 .usertitle__handle::after {
   content: "";
-  background: #546AB6;
+  background: #546ab6;
   border-radius: 100px;
   bottom: 0;
   height: 2px;
@@ -397,6 +404,19 @@ main {
 
 .usertitle__handle--two:hover {
   cursor: pointer;
+}
+
+.opentitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .opentitle .subtitle {
@@ -435,8 +455,8 @@ main {
 }
 
 .opentitle__detail {
-  background: -webkit-gradient(linear, left top, right top, from(#5f64fa), to(#673EE2));
-  background: linear-gradient(90deg, #5f64fa, #673EE2);
+  background: -webkit-gradient(linear, left top, right top, from(#5f64fa), to(#673ee2));
+  background: linear-gradient(90deg, #5f64fa, #673ee2);
   border-radius: 8px;
   padding: 14px;
 }
@@ -600,14 +620,14 @@ main {
 }
 
 .material-icons--sessions {
-  color: #6C4BE4;
+  color: #6c4be4;
   position: absolute;
   left: -35px;
 }
 
 .material-icons--subscribers {
-  background: -webkit-gradient(linear, left top, right top, from(#585DF9), to(#673EE2));
-  background: linear-gradient(90deg, #585DF9, #673EE2);
+  background: -webkit-gradient(linear, left top, right top, from(#585df9), to(#673ee2));
+  background: linear-gradient(90deg, #585df9, #673ee2);
   bottom: 30px;
   border-radius: 5px;
   color: #f2eff3;
@@ -634,8 +654,8 @@ main {
 
 @media screen and (min-width: 992px) {
   main {
-    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3ff), to(#E8E9FE));
-    background: linear-gradient(#f3f3ff, #E8E9FE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3ff), to(#e8e9fe));
+    background: linear-gradient(#f3f3ff, #e8e9fe);
     border-radius: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -651,97 +671,6 @@ main {
     z-index: -1;
   }
   .aside {
-    float: left;
-    margin: 100px 0px 100px 70px;
-    display: none;
-  }
-  .nav-wrap {
-    background: -webkit-gradient(linear, left top, left bottom, from(#8D49F2), to(#595BFB));
-    background: linear-gradient(#8D49F2, #595BFB);
-    border-radius: 45px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 15px;
-    padding-bottom: 20px;
-    padding-top: 25px;
-    position: relative;
-  }
-  .nav-wrap__img img {
-    width: 60%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
-  }
-  .nav-wrap__img a {
-    color: white;
-    font-size: 14px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-  }
-  .nav-wrap__nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .nav-wrap__navlink {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: var(--c-white);
-    text-decoration: none;
-    margin: 20px;
-    padding-left: 70px;
-    text-align: left;
-  }
-  .nav-wrap__navlink.active {
-    color: #3415a3;
-    font-weight: bold;
-  }
-  .nav-wrap__nav a:nth-child(1) {
-    padding-top: 50px;
-  }
-  .nav-wrap__nav a:nth-child(7) {
-    padding-bottom: 200px;
-  }
-  .nav-wrap__card {
-    background: #E2D7FF;
-    border-radius: 30px;
-    color: var(--c-genel);
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-top: 50px;
-    position: relative;
-    text-align: left;
-  }
-  .nav-wrap__card span {
-    max-width: 140px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  .aside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -755,9 +684,17 @@ main {
             justify-content: space-between;
     padding: 25px 0;
   }
+  .profile__chart {
+    margin-left: 50px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+  .profile__chart svg {
+    width: 550px;
+  }
   .subscriberscard {
     padding: 10px 30px 10px 46px;
-    width: 120%;
+    width: 115%;
   }
   .profıt {
     display: -webkit-box;
@@ -770,7 +707,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 66%;
+    width: 110%;
   }
   .profıtcard {
     display: -webkit-box;
@@ -788,25 +725,87 @@ main {
     max-width: 20%;
     width: 14%;
   }
-  .after--profıt {
+  .after--profıtcard {
     background: #78797a;
-    right: 8px;
+    left: 602px;
   }
-  .after--profıt:hover {
+  .after--profıtcard:hover {
     cursor: pointer;
   }
-  .after--profıt--one {
+  .after--profıtcard--one {
     background: #78797a;
     top: 30px;
-    right: 20px;
+    left: 596px;
+    right: 10px;
   }
-  .after--profıt--two {
+  .after--profıtcard--two {
     background: #78797a;
     top: 30px;
-    right: 14px;
+    left: 590px;
   }
-  .profile {
+  .profıtcard {
     width: 100%;
   }
+}
+
+.psvg {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  z-index: 1000;
+}
+
+.pcrc {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 20;
+  stroke-linecap: round;
+  -webkit-transform: translate(6px, 6px);
+          transform: translate(6px, 6px);
+}
+
+.pcrc1 {
+  stroke-dasharray: 560;
+  stroke-dashoffset: 200;
+  stroke: red;
+}
+
+.percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.percent .number {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.percent .number h2 {
+  margin: 0px;
+  color: var(--c-genel);
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=App.css.map */

@@ -13,13 +13,15 @@ const Dashboard = () => {
                             <Section1 />
                         </section>
                     </div>
+                    
                     <div className="col-12 col-md-6 col-lg-4">
                         <section className="section2">
-                            <div className="container">
+                            
 
                                 <Section2 />
-                            </div>
+                            
                         </section>
+                         
                     </div>
                 </div>
             </div>

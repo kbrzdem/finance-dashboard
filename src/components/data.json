@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Mon",
+        "LessonsWatched" : 65
+    },
+     {
+        "name": "Tue",
+        "LessonsWatched" : 115
+    },
+     {
+        "name": "Wed",
+        "LessonsWatched" : 70
+    },
+     {
+        "name": "Thu",
+        "LessonsWatched" : 120
+    },
+     {
+        "name": "Fri",
+        "LessonsWatched" : 85
+    },
+    {
+        "name": "Sat",
+        "LessonsWatched" : 85
+    },
+    {
+        "name": "Sun",
+        "LessonsWatched" : 90
+    },
+    {
+        "name": "Mon",
+        "LessonsWatched" : 60
+    },
+    {
+        "name": "Tue",
+        "LessonsWatched" :45
+    },
+    {
+        "name": "wed",
+        "LessonsWatched" : 115
+    },
+    {
+        "name": "Thu",
+        "LessonsWatched" : 40
+    }
+]

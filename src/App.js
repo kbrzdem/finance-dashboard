@@ -1,7 +1,9 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
+// components
 import Aside from  "./components/Aside";
 import Dashboard from  "./components/Dashboard";
+
 export const headerLinks = [
   {
     "id": 1,
@@ -54,7 +56,7 @@ function App() {
       <Aside headers={headerLinks}/>
       <main>
         <Switch>
-            <Route>
+            <Route path="/">
               <Dashboard />
             </Route>
           </Switch>

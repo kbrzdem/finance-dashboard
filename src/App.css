@@ -319,13 +319,17 @@ main {
   position: relative;
 }
 
+.profile__chart svg {
+  width: 400px;
+}
+
 .profile__chart::after {
   content: "";
   border-bottom: 0.1rem solid #c7c7c7;
   position: absolute;
   top: 150px;
   left: -20px;
-  width: 470px;
+  width: 400px;
 }
 
 .profile__chart::before {
@@ -345,7 +349,7 @@ main {
   left: -20px;
   position: absolute;
   top: -16px;
-  width: 470px;
+  width: 400px;
   z-index: -1;
 }
 
@@ -393,7 +397,7 @@ main {
 }
 
 .profile__chart--number1 {
-  left: 203px;
+  left: 234px;
   top: 6px;
 }
 
@@ -402,21 +406,19 @@ main {
   top: 2px;
 }
 
-.profile__chart svg {
-  width: 400px;
-}
-
 .profile__chartmonths {
   color: var(--c-black);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: var(--f-xssize);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-right: auto;
   margin-top: 25px;
   text-align: left;
+}
+
+.profile__chartmonths--text {
+  margin-right: 12px;
 }
 
 .profile__chartyears {
@@ -442,7 +444,7 @@ main {
   background: var(--c-white);
   border-radius: 26px;
   padding: 6px 6px 10px 6px;
-  width: 80%;
+  width: 84%;
 }
 
 .button__one {
@@ -450,7 +452,7 @@ main {
   color: var(--c-genel);
   font-size: var(--f-xssize);
   margin: 2px;
-  padding: 2px 4px 2px 6px;
+  padding: 2px 6px 2px 6px;
   text-decoration: none;
 }
 
@@ -1061,7 +1063,7 @@ main {
     left: auto;
   }
   .profile__chart {
-    margin-left: 108px;
+    margin-left: 95px;
     margin-top: 90px;
     margin-bottom: 50px;
     position: relative;
@@ -1071,7 +1073,7 @@ main {
     position: absolute;
     top: 150px;
     left: -45px;
-    width: 630px;
+    width: 575px;
   }
   .profile__chart::before {
     content: "";
@@ -1099,7 +1101,7 @@ main {
     left: -45px;
     position: absolute;
     top: -16px;
-    width: 630px;
+    width: 575px;
     z-index: -1;
   }
   .profile__chart--border--1::after {
@@ -1112,7 +1114,10 @@ main {
     top: 112px;
   }
   .profile__chart--number2 {
-    left: 468px;
+    left: 434px;
+  }
+  .profile__chartmonths--text {
+    margin-right: 28px;
   }
   .profile__chartyears {
     left: -96px;

@@ -28,7 +28,7 @@ const greatestValue = (values) =>
 
 const BarChart = ({ data }) => {
   const barWidth = 16;
-  const barMargin = 37;
+  const barMargin = 33;
   const width = data.length * (barWidth + barMargin);
   const height = greatestValue(data.map((datam) => datam.LessonsWatched));
   return (

@@ -264,13 +264,16 @@ main {
     margin-top: 90px;
     margin-bottom: 50px;
     position: relative;
+    svg {
+      width: 400px;
+    }
     &::after {
       content: "";
       border-bottom: 0.1rem solid rgb(199, 199, 199);
       position: absolute;
       top: 150px;
       left: -20px;
-      width: 470px;
+      width: 400px;
     }
     &::before {
       content: "";
@@ -288,7 +291,7 @@ main {
         left: -20px;
         position: absolute;
         top: -16px;
-        width: 470px;
+        width: 400px;
         z-index: -1;
       }
       &--1 {
@@ -335,7 +338,7 @@ main {
       left: -3px;
       position: absolute;
       &1{
-        left: 203px;
+        left: 234px;
         top: 6px; 
       }
       &2{
@@ -343,19 +346,21 @@ main {
         top: 2px; 
       }
     }
-    svg {
-      width: 400px;
-    }
+    
 
     &months{
         color: var(--c-black);
         display: flex;
         font-size:var(--f-xssize);
-        justify-content: space-around;
+        //justify-content: space-around;
+        
         margin-right: auto;
         margin-top: 25px;
         text-align: left;
-        
+        &--text{
+          margin-right: 12px;
+          
+        }
     }
 
     &years{
@@ -377,13 +382,13 @@ main {
   background: var(--c-white);
   border-radius: 26px;
   padding: 6px 6px 10px 6px;
-  width: 80%;
+  width: 84%;
   &__one {
     border-radius: 15px;
     color: var(--c-genel);
     font-size: var(--f-xssize);
     margin: 2px;
-    padding: 2px 4px 2px 6px;
+    padding: 2px 6px 2px 6px;
     text-decoration: none;
     &:hover {
       cursor: pointer;
@@ -886,7 +891,7 @@ main {
   
  
   .profile__chart {
-    margin-left: 108px;
+    margin-left: 95px;
     margin-top: 90px;
     margin-bottom: 50px;
     position: relative;
@@ -895,7 +900,7 @@ main {
       position: absolute;
       top: 150px;
       left: -45px;
-      width: 630px;
+      width: 575px;
     }
     &::before {
       content: "";
@@ -925,7 +930,7 @@ main {
         left: -45px;
         position: absolute;
         top: -16px;
-        width: 630px;
+        width: 575px;
         z-index: -1;
       }
       &--1 {
@@ -945,7 +950,13 @@ main {
       }
     }
     &--number2{
-      left: 468px;
+      left: 434px;
+    }
+    &months{
+      &--text{
+        margin-right: 28px;
+        
+      }
     }
     &years{
       

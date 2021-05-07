@@ -33,7 +33,8 @@ export const headerLinks = [
     "id": 4,
     "title": "Messages",
     "link": "/messages",
-    "icon":"mail"
+    "icon":"mail",
+  
   },
   {
     "id": 4,
@@ -50,7 +51,9 @@ export const headerLinks = [
 ]
 
 
+
 function App() {
+
   return (
     <Router>
       <Aside headers={headerLinks}/>

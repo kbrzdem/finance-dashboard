@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 const Aside = ({ headers }) => {
   const navLinks = [];
 
-  headers.forEach(({ id, title, link, icon }) => {
+  headers.forEach(({ id, title, link, icon, subtitle }) => {
     navLinks.push(
       <NavLink className="nav-wrap__navlink" exact to={link} key={id}>
         <div className="icon">
           <span className="material-icons material-icons--navbar">{icon}</span>
         </div>
         {title}
+       
       </NavLink>
     );
   });
@@ -26,7 +27,7 @@ const Aside = ({ headers }) => {
           </figure>
 
           <nav className="nav-wrap__nav">{navLinks}</nav>
-
+          <span className="nav-wrap__messages-subtitle">12</span>
           <div className="nav-wrap__card">
             <span class="material-icons material-icons--navcard ">restore</span>
             <h4>History available</h4>

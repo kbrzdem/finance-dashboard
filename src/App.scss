@@ -1,6 +1,5 @@
 body {
   background: rgb(236, 238, 253);
-
 }
 
 :root {
@@ -43,7 +42,17 @@ body {
     text-align: center;
     text-decoration: none;
   }
-
+  &__messages-subtitle{
+    
+      background:rgb(167, 77, 77);
+      border-radius: 5px;
+      color: var(--c-white);
+      font-size: 10px;
+      left: 190px;
+      padding: 3px 7px 2px;
+      position: absolute;
+      top: 434px;
+  }
   &__nav {
     display: inline-flex;
     flex-direction: column;
@@ -56,7 +65,6 @@ body {
       padding-left: 70px;
       text-align: left;
       &.active {
-        
         font-weight: bold;
       }
     }
@@ -67,6 +75,8 @@ body {
     & a:nth-child(7) {
       padding-bottom: 200px;
     }
+
+    
   }
 
   &__card {
@@ -120,7 +130,6 @@ body {
   }
 
   &--profıtcard {
-
     background: #78797a;
     left: 155px;
     //right: 155px;
@@ -155,9 +164,11 @@ main {
   position: absolute;
   z-index: -1;
 }
+
 .card {
   padding: 10px 0;
 }
+
 .sessionscard {
   padding-top: 20px;
   position: relative;
@@ -172,7 +183,6 @@ main {
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 6px;
-
   }
   &__title2 {
     color: var(--c-black);
@@ -183,7 +193,7 @@ main {
 .subscriberscard {
   align-items: center;
   background: var(--c-white);
-  border-radius: 25px;
+  border-radius: 18px;
   padding: 5px 10px 5px 46px;
   margin: 5px;
   position: relative;
@@ -232,37 +242,142 @@ main {
 }
 
 .profile {
+  position: relative;
   &__growth {
     align-items: center;
     display: flex;
+    padding-bottom: 24px;
     justify-content: space-between;
   }
   &__overal h3 {
     color: var(--c-genel);
     margin-bottom: 6px;
-    
   }
   &__overal p {
     color: var(--c-black);
     font-size: var(--f-xssize);
     margin-top: 0px;
+   
   }
 
-  &__chart{  
+  &__chart {
     margin-top: 90px;
     margin-bottom: 50px;
-    svg{
-        width: 400px;
-
+    position: relative;
+    &::after {
+      content: "";
+      border-bottom: 0.1rem solid rgb(199, 199, 199);
+      position: absolute;
+      top: 150px;
+      left: -20px;
+      width: 470px;
+    }
+    &::before {
+      content: "";
+      border-bottom: 0.1rem solid rgb(199, 199, 199);
+      position: absolute;
+      top: 60px;
+      transform: rotate(90deg);
+      left: -110px;
+      width: 180px;
+    }
+    &--border {
+      &::after {
+        content: "";
+        border-bottom: 0.1rem dashed rgb(199, 199, 199);
+        left: -20px;
+        position: absolute;
+        top: -16px;
+        width: 470px;
+        z-index: -1;
+      }
+      &--1 {
+        &::after {
+          top: 28px;
         }
-    } 
+      }
+      &--2 {
+        &::after {
+          top: 70px;
+        }
+      }
+      &--3 {
+        &::after {
+          top: 112px;
+        }
+      }
+    }
+    
+    &sept {
+      background: linear-gradient(90deg, #585df9, #673ee2);
+      border-radius: 20px;
+      padding: 16px 24px 0px 30px;
+      max-width: 33%;
+      position: absolute;
+      top: -120px;
+      left: 100px;
+  
+    }
+    &--dlr {
+      color: var(--c-white);
+      font-size: var(--f-smsize);
+      margin-top: 6px;
+    }
+    &--sept {
+      color: var(--c-white);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+    &--number{
+      color: var(--c-genel);
+      font-size: var(--f-smsize);
+      top: 26px;
+      left: -3px;
+      position: absolute;
+      &1{
+        left: 203px;
+        top: 6px; 
+      }
+      &2{
+        left: 310px;
+        top: 2px; 
+      }
+    }
+    svg {
+      width: 400px;
+    }
+
+    &months{
+        color: var(--c-black);
+        display: flex;
+        font-size:var(--f-xssize);
+        justify-content: space-around;
+        margin-right: auto;
+        margin-top: 25px;
+        text-align: left;
+        
+    }
+
+    &years{
+      color: var(--c-black);
+      display: flex;
+      font-size:var(--f-xssize);
+      flex-direction: column;
+      position: absolute;
+      bottom: 60px;
+      left: -56px;
+      &--text{
+          margin-bottom: 18px;
+      }
+    }
+  }
 }
 
 .button {
   background: var(--c-white);
   border-radius: 26px;
   padding: 6px 6px 10px 6px;
-
+  width: 80%;
   &__one {
     border-radius: 15px;
     color: var(--c-genel);
@@ -292,6 +407,7 @@ main {
   padding: 0px 20px;
   font-size: var(--f-xssize);
 }
+
 .usertitle {
   position: relative;
   font-size: 16px;
@@ -343,6 +459,7 @@ main {
     }
   }
 }
+
 .opentitle {
   display: flex;
   flex-direction: column;
@@ -358,7 +475,6 @@ main {
     padding: 22px;
     position: relative;
     white-space: nowrap;
-
   }
   &__sub1 {
     color: var(--c-genel);
@@ -378,8 +494,7 @@ main {
 }
 
 .analytics {
-    
-    &__wrap {
+  &__wrap {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -424,7 +539,6 @@ main {
     flex-direction: column;
     font-size: var(--f-xssize);
     text-align: center;
-    
 
     &--background {
       background: var(--c-white);
@@ -435,7 +549,7 @@ main {
         content: "";
         border-radius: 100px;
         border: 1.4px #000000 solid;
-        
+
         height: 4px;
         position: absolute;
         right: 5px;
@@ -486,72 +600,66 @@ main {
   }
 }
 
-.audit{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 21px;
-    
-    &__title{
-        margin: 0;
-        text-align: center;
-    }
-    &__text{
-        background: var(--c-white);
-        border-radius: 10px;
-        font-size: var(--f-xssize);
-        padding: 5px 0px 5px 10px;
-        position: relative;
-        text-align: left;
-        width: 41%;
-        word-spacing: -2px;
-        
+.audit {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21px;
 
-    }
+  &__title {
+    margin: 0;
+    text-align: center;
+  }
+  &__text {
+    background: var(--c-white);
+    border-radius: 10px;
+    font-size: var(--f-xssize);
+    padding: 5px 0px 5px 10px;
+    position: relative;
+    text-align: left;
+    width: 39%;
+    word-spacing: -2px;
+  }
 }
 
-.privilege{
-    align-items: center;
-    position: relative;
-   
-    &::after{
-        content:"";
-        background: var(--c-genel);
-        border-radius:  100px;
-        bottom: 0px; 
-        height: 6px;
-        right: 0px;
-        left: 0px;
-        top: 65px;
-        position: absolute;
-        width: 60%;
-    
-    
-    }
-    &::before{
-        content:"";
-        background: #dbdbdb;
-        border-radius: 100px;
-        bottom: 0px; 
-        height: 6px;
-        right: 0px;
-        left: 0px;
-        top: 65px;
-        position: absolute;
-        width: 100%;
-    
-    
-    }
-    &__number{
-        color: var(--c-genel);
-        font-size: var(--f-bigsize);
-        margin-bottom: 5px;
-        margin-top: 28px;
-    }
+.privilege {
+  align-items: center;
+  position: relative;
 
-    &__text{
-        color: var(--c-black);
-    }
+  &::after {
+    content: "";
+    background: var(--c-genel);
+    border-radius: 100px;
+    bottom: 0px;
+    height: 6px;
+    right: 0px;
+    left: 0px;
+    top: 65px;
+    position: absolute;
+    width: 60%;
+  }
+  &::before {
+    content: "";
+    background: #dbdbdb;
+    border-radius: 100px;
+    bottom: 0px;
+    height: 6px;
+    right: 0px;
+    left: 0px;
+    top: 65px;
+    position: absolute;
+    width: 100%;
+  }
+  &__number {
+    color: var(--c-genel);
+    font-size: var(--f-bigsize);
+    margin-bottom: 5px;
+    margin-top: 28px;
+  }
+
+  &__text {
+    color: var(--c-black);
+  }
 }
 
 .material-icons {
@@ -593,104 +701,17 @@ main {
     top: 20px;
   }
 
-  &--audit{
-      color: var(--c-white);
-      background: rgb(204, 189, 161);
-      border-radius: 3px;
-      font-size: 12px;
-      left: 90px;
-      padding: 1px;
-      top:8px;
- 
+  &--audit {
+    color: var(--c-white);
+    background: rgb(204, 189, 161);
+    border-radius: 3px;
+    font-size: 12px;
+    left: 90px;
+    padding: 1px;
+    top: 6px;
   }
 }
 
-
-@media screen and(min-width:992px) {
-  main {
-    background: linear-gradient(#f3f3ff, #e8e9fe);
-    border-radius: 45px;
-    display: flex;
-    // float:left;
-    justify-content: space-between;
-    margin-top: 45px;
-    margin-right: 40px;
-    padding: 40px 5px 50px 180px;
-    position: absolute;
-    left: 160px;
-    z-index: -1;
-  }
-  .aside{
-    display:flex;
-  }
-
-  .card {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0;
-  }
-
-  .profile__chart{
-      margin-left: 50px;
-    margin-top: 90px;
-    margin-bottom: 50px;
-    svg{
-        width: 550px;
-
-        }
-    } 
-
-  .subscriberscard {
-    padding: 10px 30px 10px 46px;
-    width: 106%;
-    
-  }
-
-  .profıt {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 110%;
-  }
-
-  .profıtcard {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-    &__desc5--background {
-      max-width: 20%;
-      width: 14%;
-    }
-  }
-
-  .after--profıtcard {
-    background: #78797a;
-    left: 602px;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &--one {
-      background: #78797a;
-      top: 30px;
-      left: 596px;
-      right: 10px;
-    }
-
-    &--two {
-      background: #78797a;
-      top: 30px;
-      left: 590px;
-    }
-  }
-
-
-  .profıtcard{
-    width: 100%;
-  }
-}
 
 
 .psvg {
@@ -709,47 +730,42 @@ main {
     stroke-dasharray: 490;
     stroke-dashoffset: 490;
   }
-  
-  .pcrc1 {
-   
-    stroke-dashoffset: calc(490 - (490*75) / 100);
-    stroke:#8034f1;
-  }
 
-  
+  .pcrc1 {
+    stroke-dashoffset: calc(490 - (490 * 75) / 100);
+    stroke: #8034f1;
+  }
 }
+
 .percent {
-    
-    margin-top: 10px;
-    margin-left: 20px;
-    
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    position: relative;
-    ::after{
-        content: "";
-        background: var(--c-white);
-        border-radius: 100px;
-        bottom: 0;
-        right: 106px;
-        position: absolute;
-        top: 107px;
-        width:12px;
-        height:13px;
-        
-    }
-    &__number{
-        height: 10px;
-        left: 31px;
-        margin: 0px;
-        position: absolute;
-        top: 70px;
-        text-align: center;
-        z-index: 1000;
-        width: 100%;
-        
-      }
+  margin-top: 10px;
+  margin-left: 20px;
+
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  position: relative;
+  ::after {
+    content: "";
+    background: var(--c-white);
+    border-radius: 100px;
+    bottom: 0;
+    right: 106px;
+    position: absolute;
+    top: 107px;
+    width: 12px;
+    height: 13px;
+  }
+  &__number {
+    height: 10px;
+    left: 31px;
+    margin: 0px;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+  }
 
   &__nbr {
     color: var(--c-white);
@@ -758,40 +774,183 @@ main {
     margin: 12px 0 0 16px;
   }
 
-  &__text{
+  &__text {
     color: rgb(219, 219, 219);
     margin: 12px 0 0 16px;
   }
-} 
-.progresscircle{
-    width: 10;
-    height:25px;
 }
 
-.svgcircle{
-    
-    position: relative;
-    width: 230px;
-    height: 230px;
-    bottom: 115px;
-    left: 18px;
-    
+.progresscircle {
+  width: 10;
+  height: 25px;
 }
 
-.crc-circle{
-    width: 100%;
-    height: 100%;
-    stroke-width: 50;
-    stroke-linecap: round;
-    transform: translate(2px, 2px);
-    stroke: rgb(255, 255, 255);
-    stroke-dasharray: 10;
-    stroke-dashoffset: 20;
+.svgcircle {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  bottom: 115px;
+  left: 18px;
 }
 
-.crc-circle1{
-    stroke-dashoffset: 200;
-    fill: #8034f1;
+.crc-circle {
+  width: 100%;
+  height: 100%;
+  stroke-width: 50;
+  stroke-linecap: round;
+  transform: translate(2px, 2px);
+  stroke: rgb(255, 255, 255);
+  stroke-dasharray: 10;
+  stroke-dashoffset: 20;
+}
+
+.crc-circle1 {
+  stroke-dashoffset: 200;
+  fill: #8034f1;
+  z-index: -1;
+}
+
+@media screen and(min-width:992px) {
+  main {
+    background: linear-gradient(#f3f3ff, #e8e9fe);
+    border-radius: 45px;
+    display: flex;
+    // float:left;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-right: 40px;
+    padding: 40px 5px 50px 180px;
+    position: absolute;
+    left: 160px;
     z-index: -1;
+  }
+  .aside {
+    display: flex;
+  }
 
+  .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+
+  
+
+  .subscriberscard {
+    padding: 13px 30px 13px 46px;
+    width: 108%;
+  }
+
+  .profıt {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 110%;
+  }
+
+  .profıtcard {
+    display: grid;
+    grid-template-columns: repeat(6, 16.6%);
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    &__desc5--background {
+      width: 60%;
+    }
+  }
+
+  .after--profıtcard {
+    background: #78797a;
+    right: 70px;
+    left: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--one {
+      background: #78797a;
+      top: 30px;
+      right: 63px;
+      left: auto;
+    }
+
+    &--two {
+      background: #78797a;
+      top: 30px;
+      right: 56px;
+      left: auto;
+    }
+  }
+
+  
+ 
+  .profile__chart {
+    margin-left: 108px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 150px;
+      left: -45px;
+      width: 630px;
+    }
+    &::before {
+      content: "";
+      border-bottom: 0.1rem solid rgb(199, 199, 199);
+      position: absolute;
+      top: 60px;
+      transform: rotate(90deg);
+      left: -135px;
+      width: 180px;
+    }
+    &sept {
+      padding: 14px 24px 0px 30px;
+      max-width: 23%;
+      position: absolute;
+      top: -120px;
+      left: 100px;
+  
+    }
+    svg {
+      width: 600px;
+    }
+
+    &--border {
+      &::after {
+        content: "";
+        border-bottom: 0.1rem dashed rgb(199, 199, 199);
+        left: -45px;
+        position: absolute;
+        top: -16px;
+        width: 630px;
+        z-index: -1;
+      }
+      &--1 {
+        &::after {
+          top: 28px;
+        }
+      }
+      &--2 {
+        &::after {
+          top: 70px;
+        }
+      }
+      &--3 {
+        &::after {
+          top: 112px;
+        }
+      }
+    }
+    &--number2{
+      left: 468px;
+    }
+    &years{
+      
+      left: -96px;
+     
+    }
+  }
 }
